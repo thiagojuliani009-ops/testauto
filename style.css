@@ -14,7 +14,7 @@ nav {
 }
 
 img.logo {
-    height: 100px;
+    width: 100px;
     margin: 0 auto;
 }
 h1 {
@@ -96,27 +96,121 @@ video {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-
-nav.Mobile-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eee;
+  padding: 10px 20px;
 }
 
-nav.links {
-    letter-spacing: 1px;
-    margin-right: 32px;
+/* lista */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
+/* links */
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* logo */
+.logo {
+  height: 40px;
+}
+
+/* ícone */
+.menu-icon {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vh;
-        height: 92vh;
-        background-color: #333; 
-    }
+  
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #eee;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.compra-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.compra-form input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.compra-form select {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.compra-form button {
+    padding: 12px 24px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.compra-form button:hover {
+    background-color: #003f7a;
+}
+
+contato-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.contato-form input, .contato-form textarea {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contato-form button {
+    padding: 12px 24px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-form button:hover {
+    background-color: #003f7a;
 }
 

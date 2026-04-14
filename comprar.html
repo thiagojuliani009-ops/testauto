@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <title>comprarcityone</title>
+</head>
+<body>
+    <header>
+     <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+  ☰
+</div>
+        <ul class="nav-links" id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="veículos.html">Comprar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <img src="src/imgens/Autotech.png" alt="logo da empresa" class="logo">  
+    </nav>
+    <h1>Compra do Cityone</h1>
+    <p>Parabéns por escolher o Cityone! Para finalizar sua compra, por favor preencha o formulário abaixo com suas informações de contato e detalhes de pagamento. Nossa equipe entrará em contato com você em breve para confirmar os detalhes da sua compra e fornecer as próximas etapas.</p>
+    <form class="compra-form">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        
+        <label for="endereco">Endereço de Entrega:</label>
+        <input type="text" id="endereco" name="endereco" required>
+        
+        <label for="pagamento">Método de Pagamento:</label>
+        <select id="pagamento" name="pagamento" required>
+            <option value="">Selecione</option>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="boleto">Boleto Bancário</option>
+            <option value="pix">PIX</option>
+        </select>
+        
+        <button type="submit">Finalizar Compra</button>
+    
+       <script src="script/engine.js"></script> 
+    </header>
+    
+</body>
+</html>
