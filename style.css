@@ -156,9 +156,10 @@ video {
 .compra-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     gap: 20px;
-    margin-top: 40px;
+    max-width: 500px; 
+    margin: 40px auto
 }
 
 .compra-form input {
@@ -176,12 +177,16 @@ video {
 }
 
 .compra-form button {
-    padding: 12px 24px;
+  width: 100%;
+    padding: 15px;
     background-color: #0056b3;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 .compra-form button:hover {
     background-color: #003f7a;
