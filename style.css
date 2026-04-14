@@ -187,30 +187,54 @@ video {
     background-color: #003f7a;
 }
 
-contato-form {
+/* Container do formulário */
+.contato-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centraliza o formulário na tela */
     gap: 20px;
-    margin-top: 40px;
+    max-width: 500px;    /* Define uma largura máxima elegante */
+    margin: 40px auto;   /* Centraliza o bloco na página */
 }
 
-.contato-form input, .contato-form textarea {
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Cada grupo de Label + Input */
+.form-control {
+    display: flex;
+    flex-direction: column; /* Coloca o texto em cima do campo */
+    width: 100%;            /* Faz o grupo ocupar a largura do form */
+    text-align: left;
 }
+
+.form-control label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ajustando os inputs para preencherem o espaço */
+.contato-form input, 
+.contato-form textarea {
+    width: 100%;           /* Agora eles usam 100% da div pai */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;    /* Bordas um pouco mais arredondadas ficam modernas */
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+/* O botão agora fica alinhado com o resto */
 .contato-form button {
-    padding: 12px 24px;
+    width: 100%;
+    padding: 15px;
     background-color: #0056b3;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .contato-form button:hover {
     background-color: #003f7a;
 }
-
