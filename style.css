@@ -88,13 +88,54 @@ button:hover {
 }
 
 video {
-    display: -moz-stack;
-    margin: 24px auto;
-    width: min(200px, 200%);
+    display: block;
+    max-width: 600px;
+    width: 100%;
     height: auto;
+    margin: 24px auto;
     border-radius: 16px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 16 / 9;
 }
+
+.content-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.3em;
+    color: #010c18;
+    margin: 20px 0 40px;
+    font-weight: 600;
+}
+
+.section {
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h2 {
+    color: #010911;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.section p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
 
 .navbar {
   display: flex;
@@ -230,7 +271,7 @@ video {
 .contato-form button {
     width: 100%;
     padding: 15px;
-    background-color: #0056b3;
+    background-color: #0562be;
     color: white;
     border: none;
     border-radius: 8px;
