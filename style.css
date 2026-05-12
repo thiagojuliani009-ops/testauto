@@ -9,14 +9,11 @@ nav {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
-img.logo {
-    width: 100px;
-    margin: 0 auto;
-}
 h1 {
     text-align: center;
     color: #111;
@@ -161,7 +158,12 @@ video {
 
 /* logo */
 .logo {
-  height: 40px;
+  height: 70px;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ícone */
