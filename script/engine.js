@@ -18,3 +18,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.getElementById('pagina-inicial')
