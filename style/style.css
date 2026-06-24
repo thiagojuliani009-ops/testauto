@@ -8,7 +8,7 @@
 body#pagina-inicial {
     padding: 0;
     border: 0;
-    margin: 0 75.5px;
+    margin: 0 20px;
 }
 
 
@@ -336,4 +336,77 @@ video {
 
 .contato-form button:hover {
     background-color: #003f7a;
+}
+
+div.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #3C3C3C;
+    color: #f8f5f5;
+    font-size: 0.9em;
+}
+
+span.copyright {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8em;
+    color: #C2D4F1;
+}
+
+a {
+    color: #C2D4F1;
+    text-decoration: none;
+}
+
+i {
+    font-family: icomoon!important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+/* Estilos para a barra de pesquisa */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border: 2px solid #0562be;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.search:focus-within {
+    box-shadow: 0 6px 20px rgba(5, 98, 190, 0.2);
+}
+
+.search i {
+    color: #0562be;
+    font-size: 18px;
+    font-family: 'Font Awesome 6 Free' !important;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+}
+
+.search input::placeholder {
+    color: #999;
 }
