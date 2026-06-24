@@ -18,4 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Função para filtrar veículos
+function filtrarVeiculos() {
+    const searchInput = document.getElementById('searchInput');
+    const filter = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('.veiculo-card');
+    
+    cards.forEach(card => {
+        const nomeVeiculo = card.getAttribute('data-veiculo');
+        if (nomeVeiculo.includes(filter)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
 document.getElementById('pagina-inicial')

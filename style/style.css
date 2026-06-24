@@ -361,7 +361,6 @@ a {
 
 i {
     font-family: icomoon!important;
-    speak: never;
     font-style: normal;
     font-weight: 400;
     font-feature-settings: normal;
@@ -409,4 +408,20 @@ i {
 
 .search input::placeholder {
     color: #999;
+}
+
+/* Animação para os cards de veículos */
+.veiculo-card {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -22,30 +22,30 @@
     <h1>Veículos Disponíveis</h1>
     <div class="search">
         <i class="fas fa-search"></i>
-        <input type="text" placeholder="Buscar veículo...">
+        <input type="text" id="searchInput" placeholder="Buscar veículo..." onkeyup="filtrarVeiculos()">
     </div>
     <section class="veiculos-section">
         <div class="veiculos-grid">
-            <div class="veiculo-card">
+            <div class="veiculo-card" data-veiculo="cityone">
                 <img src="src/imgens/cityone.png" alt="Cityone" class="car">
                 <h3>Cityone</h3>
                 <p class="preco">Preço: R$ 150.000,00</p>
                 <a href="comprar.html"><button>Comprar</button></a>
             
             </div>
-            <div class="veiculo-card">
+            <div class="veiculo-card" data-veiculo="drivex">
                 <img src="src/imgens/Drivex.png" alt="Drivex" class="car">
                 <h3>Drivex</h3>
                 <p class="preco">Preço: R$ 200.000,00</p>
                 <button>Comprar</button>
             </div>
-            <div class="veiculo-card">
+            <div class="veiculo-card" data-veiculo="terrax">
                 <img src="src/imgens/terrax.png" alt="Terrax" class="car">
                 <h3>Terrax</h3>
                 <p class="preco">Preço: R$ 250.000,00</p>
                 <button>Comprar</button>
             </div>
-            <div class="veiculo-card">
+            <div class="veiculo-card" data-veiculo="voltis">
                 <img src="src/imgens/voltis.png" alt="Voltis" class="car">
                 <h3>Voltis</h3>
                 <p class="preco">Preço: R$ 300.000,00</p>
