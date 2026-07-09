@@ -15,11 +15,12 @@ body#pagina-inicial {
 
 nav {
     background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     position: relative;
+    min-height: 74px;
 }
 
 h1 {
@@ -153,13 +154,16 @@ video {
 
 /* lista */
 .nav-links {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     list-style: none;
-    gap: 8px;
+    gap: 16px;
     margin: 0;
     padding: 0;
     align-items: center;
-    margin-left: auto;
 }
 
 /* links */
@@ -167,8 +171,8 @@ video {
     text-decoration: none;
     color: #222;
     font-weight: 700;
-    padding: 6px 8px;
-    border-radius: 4px;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
 
 /* logo */
@@ -176,6 +180,7 @@ video {
     display: block;
     width: 120px;
     height: auto;
+    margin: 0 auto;
 }
 
 /* ícone */
@@ -183,6 +188,8 @@ video {
   font-size: 25px;
   cursor: pointer;
   display: none;
+  position: absolute;
+  right: 20px;
 }
 
 /* MOBILE */
@@ -195,29 +202,31 @@ video {
     .menu-icon {
         display: block;
         font-size: 28px;
-        margin-left: auto;
+        right: 20px;
+        margin-left: 0;
     }
 
     .nav-links {
         display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 10px;
-        width: 100%;
-        background: #eee;
         flex-direction: column;
-        padding: 10px;
-        gap: 8px;
-        box-shadow: 0 6px 14px rgba(0,0,0,0.06);
-        align-items: flex-end;
-        padding-right: 12px;
+        position: absolute;
+        top: 72px;
+        left: 20px;
+        right: 20px;
+        background: #ffffff;
+        padding: 16px;
+        gap: 10px;
+        box-shadow: 0 18px 34px rgba(0,0,0,0.08);
+        align-items: stretch;
+        border-radius: 18px;
     }
 
     .nav-links a {
         padding: 12px;
         width: 100%;
-        text-align: right;
+        text-align: left;
+        border-radius: 12px;
+        background: #f5f7fb;
     }
 
     .nav-links.active {
@@ -225,7 +234,7 @@ video {
     }
 
     nav {
-        padding: 8px 12px;
+        padding: 8px 14px;
     }
 
     .veiculos-grid {
