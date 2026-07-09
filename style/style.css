@@ -159,6 +159,7 @@ video {
     margin: 0;
     padding: 0;
     align-items: center;
+    margin-left: auto;
 }
 
 /* links */
@@ -172,12 +173,9 @@ video {
 
 /* logo */
 .logo {
-    height: 50px;
-    width: auto;
-    position: static;
-    transform: none;
-    margin: 0;
-    margin-right: 8px;
+    display: block;
+    width: 120px;
+    height: auto;
 }
 
 /* ícone */
@@ -189,25 +187,58 @@ video {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  
-  .menu-icon {
-    display: block;
-  }
 
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #eee;
-    flex-direction: column;
-    padding: 10px;
-  }
+    .logo {
+        width: 90px;
+    }
 
-  .nav-links.active {
-    display: flex;
-  }
+    .menu-icon {
+        display: block;
+        font-size: 28px;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 10px;
+        width: 100%;
+        background: #eee;
+        flex-direction: column;
+        padding: 10px;
+        gap: 8px;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+        align-items: flex-end;
+        padding-right: 12px;
+    }
+
+    .nav-links a {
+        padding: 12px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav {
+        padding: 8px 12px;
+    }
+
+    .veiculos-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .search {
+        max-width: 100%;
+        padding: 10px;
+        margin: 20px 10px;
+    }
+
 }
 
 .compra-form {
